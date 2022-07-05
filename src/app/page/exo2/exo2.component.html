@@ -1,0 +1,26 @@
+
+    <div class="m-3" *ngFor="let game of games" >
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"> {{ game }}</h5>
+              <a class="btn btn-primary mb-3" (click)="ajouter(game)">ajouter au panier</a>
+            </div>
+          </div>
+    </div>
+
+    <h3 class="alert alert-primary" *ngIf="panier.length !== 0"> Le panier contient {{ panier.length }} article.s</h3>
+
+    <div class="alert alert-danger" *ngIf="panier.length == 0"> Le panier est vide !</div>
+
+    <div class="m-3" *ngFor="let p of panier">
+
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"> {{ p }}</h5>
+              <a class="btn btn-danger mb-3" (click)="supprimer(p)">supprimer du panier</a>
+            </div>
+          </div>
+
+    </div>
+

@@ -1,0 +1,15 @@
+<div>
+
+    <div [class.alert-danger]="total < 0"
+         [class.alert-info]="total > 0" class="alert">
+        {{ total }}
+    </div>
+    
+
+    <button (click)="compteur(1)" class="btn btn-info m-3"> +1 </button>
+    <button (click)="compteur(-1)" class="btn btn-danger m-3"> -1 </button>
+    <button (click)="compteur(5)" class="btn btn-info m-3"> +5 </button>
+    <button (click)="compteur(-5)" class="btn btn-danger m-3"> -5 </button>
+    <button (click)="reset()" class="btn btn-dark m-3"> reset </button>
+
+  </div>
