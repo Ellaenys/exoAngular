@@ -1,1 +1,11 @@
-<p>exo4 works!</p>
+<div class="container d-flex flex-wrap">
+    <div *ngFor="let card of arrayMemoryCards">
+
+        <div class="card m-3" style="width: 15rem;">
+            <div class="card-body">
+            <img src="{{ card.img }}">
+            </div>
+        </div>
+
+    </div>
+</div>
