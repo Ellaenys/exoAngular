@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col" class="table-primary">Nom</th>
+        <th scope="col" class="table-secondary">Age</th>
+        <th scope="col" class="table-primary">Genre</th>
+        <th scope="col" class="table-secondary">Activités</th>
+        <th scope="col" class="table-primary">Collège ou lycée ?</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let stu of arrayStudent">
+      <tr>
+        <th scope="row">{{ stu.name }}</th>
+        <td>{{ stu.age }} ans </td>
+        <td>{{ stu.gender }}</td>
+        <td>{{ stu.activities }}</td>
+        <td *ngIf="stu.age > 15" class="table-danger">Au Lycée !</td>
+        <td *ngIf="stu.age < 15" class="table-success">Au Collège !</td>
+      </tr>
+    </tbody>
+  </table>
