@@ -9,6 +9,7 @@ import { Exo1Component } from './page/exo1/exo1.component';
 import { Exo2Component } from './page/exo2/exo2.component';
 import { Exo3Component } from './page/exo3/exo3.component';
 import { Exo4Component } from './page/exo4/exo4.component';
+import { Exo5Component } from './page/exo5/exo5.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Exo4Component } from './page/exo4/exo4.component';
     Exo1Component,
     Exo2Component,
     Exo3Component,
-    Exo4Component
+    Exo4Component,
+    Exo5Component
   ],
   imports: [
     BrowserModule,
