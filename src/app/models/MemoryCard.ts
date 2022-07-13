@@ -32,6 +32,6 @@ export class MemoryCard {
     }
 
     set hasBeenReturned(returned : boolean) {
-        this._hasBeenFound = returned;
+        this._hasBeenReturned = returned;
     }
 }
